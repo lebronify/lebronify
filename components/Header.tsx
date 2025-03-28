@@ -3,8 +3,13 @@
 import Image from "next/image";
 import { ChatInput } from "./ChatInput";
 
+interface Message {
+  type: 'user' | 'ai';
+  content: string;
+}
+
 type HeaderProps = {
-  messages: any[];
+  messages: Message[];
   input: string;
   setInput: (input: string) => void;
   handleSubmit: (e: React.FormEvent) => void;

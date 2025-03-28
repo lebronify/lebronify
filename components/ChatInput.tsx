@@ -1,7 +1,5 @@
 "use client"
 
-import { useState } from "react";
-
 type ChatInputProps = {
   input: string;
   setInput: (input: string) => void;
